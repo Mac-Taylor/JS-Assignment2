@@ -1,11 +1,20 @@
 
 // ** PROBLEM 1 | 'sum' function
 
+let number1 = 5;
+let number2 = 12;
+let sum1 = 0;
 
 
+function sum(value1, value2) {
 
+    sum1 = number1 + number2;
 
+    return sum1;
+}
 
+let answer = sum(number1, number2);
+console.log(answer) 
 
 // ** PROBLEM 2 | 'avg' function
 
