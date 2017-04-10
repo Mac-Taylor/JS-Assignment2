@@ -66,11 +66,27 @@ PARAMETERS (17, 55, 660) AS SHOWN PRINTS '244'. */
 
 // ** PROBLEM 3 | 'greaterThan' function
 
+let parameter1 = 0;
+let parameter2 = 0;
+let isgreater = false;
 
+function greaterThan(parameter1, parameter2) {
 
+    if (parameter2 > parameter1) {
+        isgreater = true;
+        console.log('true');
+    }
 
+    else { 
+        console.log('false');
+    }
+}
 
+let result = greaterThan(105, 2500);
 
+/* PARAMETERS DEFINED BY NUMERIC VALUES OF FUNCTION'S INPUTS. IN THIS CASE,
+INPUT PARAMETERS OF (105, 2500) PRINTS A RESULT OF TRUE, WHILE HYOPTHETICAL
+INPUTS OF (105, 25) WOULD PRINT 'FALSE'.
 
 // =================================================================================================
 
