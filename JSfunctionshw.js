@@ -159,3 +159,94 @@ return longest
 
 let answer7 = longestWord(phrase);
 console.log (answer7)
+
+// =============================================================================================
+
+// ** HARD MODE - PROBLEM #8 | 'weave' function
+
+
+// =============================================================================================
+
+// ** HARD MODE - PROBLEM #9 | 'weave' function
+
+
+// =============================================================================================
+
+// ** HARD MODE - PROBLEM #10 | 'weave' function
+
+
+
+// =============================================================================================
+
+// ** HARD MODE - PROBLEM #11 | 'blackack' function
+function blackjack(cards) {
+
+let sum = 0;
+
+for (let i = 0; i < cards.length; i++) {
+    if (cards[i] === 'J' || cards[i] === 'Q' || cards[i] === 'K'){
+        cards[i] === 10;
+    }
+    if (cards[i] === 'A') {
+        cards[i] = 11;
+    }
+}
+
+for (let i = 0; i < cards.legth; i++) {
+    sum = sum + cards[i];
+}
+if (sum > 21) {
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i] === 11) {
+            cards[i]; 1;
+        }
+    }
+}
+
+sum = 0;
+for (let i = 0; i < cards.length; i++) {
+    sum = sum + cards[i];
+}
+
+if (sum > 21) {
+    return true;
+} else {
+    return false
+    }
+}
+
+console.log(blackjack([7, 3, 4]) + ' should be false');
+console.log(blackjack([7, 3, 4, 8, 8, 9]) + ' should be true');
+console.log(blackjack(['Q', 8, 'A', 7, 5]) + ' should be false');
+
+// =============================================================================================
+
+// ** HARD MODE - PROBLEM #12 | 'weave' function
+
+// =============================================================================================
+
+// ** HARD MODE PROBLEM #13 | 'weave' function
+
+// =============================================================================================
+
+// ** HARD MODE PROBLEM - #14 | 'weave' function
+
+// =============================================================================================
+
+// ** HARD MODE PROBLEM #15 | 'weave' function
+
+// =============================================================================================
+
+// ** HARD MODE PROBLEM #16 | 'weave' function
+
+// =============================================================================================
+
+// ** HARD MODE PROBLEM #17 | 'weave' function
+
+// =============================================================================================
+
+// ** HARD MODE PROBLEM #18 | 'weave' function
+
+// =============================================================================================
+
+// ** HARD MODE PROBLEM #19 | 'weave' function
