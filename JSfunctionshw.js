@@ -49,7 +49,7 @@
 
 // ** PROBLEM 7 | 'longestWord' function
 
-let phrase = 'Rush is an amazing band';
+let phrase = 'Foreigner is an OK band';
 
 function longestWord(string) {
 
