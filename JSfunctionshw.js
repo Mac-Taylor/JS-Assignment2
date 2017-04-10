@@ -17,7 +17,7 @@ let answer1 = sum(number1, number2);
 console.log(answer1) 
 
 /* IN THE 'sum' FUNCTION ABOVE THE PARAMETERS ARE DEFINED BY CHANGING THE NUMERIC VALUE 
-IN THE DEFINITIONOF THE VARIABLE */
+IN THE DEFINITIONOF THE VARIABLE. EXAMPLE ABOVE PRINTS '17'.*/
 
 let number1 = 0;
 let number2 = 0;
@@ -36,7 +36,8 @@ console.log(answer1)
 
 /* IN THIS VERSION OF THE 'sum' FUNCTION, THE PARAMERS ARE DEFINED 
 BY THE NUMERIC VALUES OF THE FUNCTION'S INPUTS. I WASN'T SURE WHICH 
-WOULD BE MORE GENERAL OR USEFUL, SO PUT BOTH. */
+WOULD BE MORE GENERAL OR USEFUL, SO PUT BOTH. PARAMETERS (5, 6) 
+PRINTS '11'.*/
 
 // =================================================================================================
 
@@ -53,8 +54,13 @@ function avg(no1, no2, no3) {
     return average;
 }
 
-let answer2 = avg(45, 55, 65);
+let answer2 = avg(17, 55, 660);
 console.log(answer2);
+
+/* PARAMETERS IN THIS SOLUTION ARE DEFINED BY THE NUMERIC VALUES OF INPUTS 
+OF THE FUNCTION, NOT BY THE VARIABLES AT THE TOP. FELT LIKE THAT WAS MORE GENERAL.
+PARAMETERS (17, 55, 660) AS SHOWN PRINTS '244'. */
+
 
 // =================================================================================================
 
