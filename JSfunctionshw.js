@@ -86,13 +86,34 @@ let result = greaterThan(105, 2500);
 
 /* PARAMETERS DEFINED BY NUMERIC VALUES OF FUNCTION'S INPUTS. IN THIS CASE,
 INPUT PARAMETERS OF (105, 2500) PRINTS A RESULT OF TRUE, WHILE HYOPTHETICAL
-INPUTS OF (105, 25) WOULD PRINT 'FALSE'.
+INPUTS OF (105, 25) WOULD PRINT 'FALSE'. */
 
 // =================================================================================================
 
 // ** PROBLEM 4 | 'secondLargest' function
 
+let things = [0, 0, 0, 0, 0];
 
+function secondLargest(things) {
+
+let solution = things[0];
+
+    for (let count4 = 0; count4 < things.length; count4++) {
+
+        if (things[count4] < things[count4++]) {
+            solution = things[count4];
+        } 
+
+        if (solution < things[count4++]) {
+            solution = things[count4++];
+        }           
+    }
+    return solution;
+}
+
+let numbers = [1, 4, 3, 2, 5];
+let answer4 = secondLargest(numbers);
+console.log(answer4);
 
 
 
