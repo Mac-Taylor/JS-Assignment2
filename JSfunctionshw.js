@@ -16,6 +16,30 @@ function sum(value1, value2) {
 let answer = sum(number1, number2);
 console.log(answer) 
 
+/* IN THE 'sum' FUNCTION ABOVE THE PARAMETERS ARE DEFINED BY CHANGING THE NUMERIC VALUE 
+IN THE DEFINITIONOF THE VARIABLE */
+
+let number1 = 0;
+let number2 = 0;
+let sum1 = 0;
+
+
+function sum(number1, number2) {
+
+    sum1 = number1 + number2;
+
+    return sum1;
+}
+
+let answer = sum(5, 6);
+console.log(answer) 
+
+/* IN THIS VERSION OF THE 'sum' FUNCTION, THE PARAMERS ARE DEFINED 
+BY THE NUMERIC VALUES OF THE FUNCTION'S INPUTS. I WASN'T SURE WHICH 
+WOULD BE MORE GENERAL OR USEFUL, SO PUT BOTH. */
+
+// =================================================================================================
+
 // ** PROBLEM 2 | 'avg' function
 
 
@@ -23,6 +47,7 @@ console.log(answer)
 
 
 
+// =================================================================================================
 
 // ** PROBLEM 3 | 'greaterThan' function
 
@@ -32,6 +57,8 @@ console.log(answer)
 
 
 
+// =================================================================================================
+
 // ** PROBLEM 4 | 'secondLargest' function
 
 
@@ -39,6 +66,7 @@ console.log(answer)
 
 
 
+// =================================================================================================
 
 // ** PROBLEM 5 | 'containsVowel' function
 
@@ -47,6 +75,7 @@ console.log(answer)
 
 
 
+// =================================================================================================
 
 // ** PROBLEM 6 | 'pigLatin' function 
 
@@ -55,6 +84,7 @@ console.log(answer)
 
 
 
+// =================================================================================================
 
 // ** PROBLEM 7 | 'longestWord' function
 
