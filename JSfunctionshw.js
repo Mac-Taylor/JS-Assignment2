@@ -115,14 +115,14 @@ let numbers = [1, 4, 3, 2, 5];
 let answer4 = secondLargest(numbers);
 console.log(answer4);
 
-
+// This one isn't done yet.
 
 
 // =================================================================================================
 
 // ** PROBLEM 5 | 'containsVowel' function
 
-
+// Need help
 
 
 
@@ -131,8 +131,7 @@ console.log(answer4);
 
 // ** PROBLEM 6 | 'pigLatin' function 
 
-
-
+// Need help.
 
 
 
