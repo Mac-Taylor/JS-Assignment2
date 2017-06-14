@@ -11,6 +11,8 @@ function sumFunction(value1, value2) {
 console.log(sumFunction(2, 3)); // returns 5, this one is done.
 console.log(sumFunction(2, 11)); // returns 13
 
+// DONE.
+
 // =================================================================================================
 
 // 02 | avg
@@ -30,58 +32,39 @@ function avg(x, y, z) {
 console.log(avg(1, 4, 10)); // returns 5
 console.log(avg(1, 4, 10, 2, 8)); // also returns 5
 
+// DONE.
+
 // =================================================================================================
 
-// ** PROBLEM 3 | 'greaterThan' function
+// 03 | greaterThan
 
-let parameter1 = 0;
-let parameter2 = 0;
-let isgreater = false;
+// Write a function called greaterThan that takes two parameters and returns true if the second parameter is greater than the first. Otherwise the function should return false.
 
-function greaterThan(parameter1, parameter2) {
+// greaterThan(5, 6); // returns true
+// greaterThan(4, 1); // returns false
 
-    if (parameter2 > parameter1) {
-        isgreater = true;
-        console.log('true');
-    }
-
-    else { 
-        console.log('false');
+function greaterThan(nmbr1, nmbr2) {
+    if (nmbr2 > nmbr1) {
+        return true;
+    } else {
+        return false;
     }
 }
 
-let result = greaterThan(105, 2500);
+console.log(greaterThan(5, 6)); // returns true
+console.log(greaterThan(4, 1)); // returns false
 
-/* PARAMETERS DEFINED BY NUMERIC VALUES OF FUNCTION'S INPUTS. IN THIS CASE,
-INPUT PARAMETERS OF (105, 2500) PRINTS A RESULT OF TRUE, WHILE HYOPTHETICAL
-INPUTS OF (105, 25) WOULD PRINT 'FALSE'. */
+// DONE. 
 
 // =================================================================================================
 
 // ** PROBLEM 4 | 'secondLargest' function
 
-let things = [0, 0, 0, 0, 0];
 
-function secondLargest(things) {
+function secondLargest(nmbrs){
+    
 
-let solution = things[0];
-
-    for (let count4 = 0; count4 < things.length; count4++) {
-
-        if (things[count4] < things[count4++]) {
-            solution = things[count4];
-        } 
-
-        if (solution < things[count4++]) {
-            solution = things[count4++];
-        }           
-    }
-    return solution;
 }
-
-let numbers = [1, 4, 3, 2, 5];
-let answer4 = secondLargest(numbers);
-console.log(answer4);
 
 // This one isn't done yet.
 
@@ -111,22 +94,22 @@ let phrase = 'Foreigner is an OK band';
 
 function longestWord(string) {
 
-let phraseSplit = string.split(' ');
-let longest = phraseSplit[0];
+    let phraseSplit = string.split(' ');
+    let longest = phraseSplit[0];
 
-for (let count7 = 0; count7 < phraseSplit.length; count7++){
-    
-         if (phraseSplit[count7].length > longest.length) {
-                longest = phraseSplit[count7];
-         }    
-}
+    for (let count7 = 0; count7 < phraseSplit.length; count7++) {
 
-return longest
+        if (phraseSplit[count7].length > longest.length) {
+            longest = phraseSplit[count7];
+        }
+    }
+
+    return longest
 
 }
 
 let answer7 = longestWord(phrase);
-console.log (answer7)
+console.log(answer7)
 
 // =============================================================================================
 
@@ -147,39 +130,42 @@ console.log (answer7)
 // =============================================================================================
 
 // ** HARD MODE - PROBLEM #11 | 'blackack' function
+
+// only have this because we did it in class.
+
 function blackjack(cards) {
 
-let sum = 0;
+    let sum = 0;
 
-for (let i = 0; i < cards.length; i++) {
-    if (cards[i] === 'J' || cards[i] === 'Q' || cards[i] === 'K'){
-        cards[i] === 10;
-    }
-    if (cards[i] === 'A') {
-        cards[i] = 11;
-    }
-}
-
-for (let i = 0; i < cards.legth; i++) {
-    sum = sum + cards[i];
-}
-if (sum > 21) {
     for (let i = 0; i < cards.length; i++) {
-        if (cards[i] === 11) {
-            cards[i]; 1;
+        if (cards[i] === 'J' || cards[i] === 'Q' || cards[i] === 'K') {
+            cards[i] === 10;
+        }
+        if (cards[i] === 'A') {
+            cards[i] = 11;
         }
     }
-}
 
-sum = 0;
-for (let i = 0; i < cards.length; i++) {
-    sum = sum + cards[i];
-}
+    for (let i = 0; i < cards.legth; i++) {
+        sum = sum + cards[i];
+    }
+    if (sum > 21) {
+        for (let i = 0; i < cards.length; i++) {
+            if (cards[i] === 11) {
+                cards[i]; 1;
+            }
+        }
+    }
 
-if (sum > 21) {
-    return true;
-} else {
-    return false
+    sum = 0;
+    for (let i = 0; i < cards.length; i++) {
+        sum = sum + cards[i];
+    }
+
+    if (sum > 21) {
+        return true;
+    } else {
+        return false
     }
 }
 
