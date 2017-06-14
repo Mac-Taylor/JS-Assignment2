@@ -61,36 +61,77 @@ console.log(greaterThan(4, 1)); // returns false
 // ** PROBLEM 4 | 'secondLargest' function
 
 
-function secondLargest(nmbrs){
-    
+function secondLargest(nmbrs) {
+    let largest = nmbrs[0];
+    for (let i = 0; i < nmbrs.length; i++) {
+        if (nmbrs[i] > largest) {
+            largest = nmbrs[i];
+        }
+        nmbrs.splice(nmbrs[i], 1);
+    }
+    for (let i = 0; i < nmbrs.length; i++) {
+        if (nmbrs[i] > largest) {
+            largest = nmbrs[i];
+        }
+        return largest;
+    }
 
 }
 
-// This one isn't done yet.
+console.log(secondLargest([1, 2, 3, 4, 5, 6, 7])); // Returns 6.
 
+// DONE.
 
 // =================================================================================================
 
 // ** PROBLEM 5 | 'containsVowel' function
 
-// Need help
+function containsVowel(string) {
+    let hasvowel = false;
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] === 'o' || string[i] === 'u') {
+            hasvowel = true;
+        }
+    }
+    return hasvowel;
+}
 
+console.log(containsVowel('abc')); // returns true
+console.log(containsVowel('bbb')); // returns false 
+console.log(containsVowel('bob')); // returns true
 
-
+// DONE.
 
 // =================================================================================================
 
 // ** PROBLEM 6 | 'pigLatin' function 
 
-// Need help.
+function pigLatinOneWord(string) {
 
+    let onewordPL = string.split("");
+    let firstLetter = string[0]; 
 
+    onewordPL.push(firstLetter, "ay");
+    onewordPL.splice(0, 1);
+    onewordPL = onewordPL.join("");
+    return onewordPL;   
+}
+
+function pigLatin(string) {
+    let words = string.split(" ");
+    let firstLetter = string[0];
+    for (let i = 0; i < words.length; i++){
+        words[i] = pigLatinOneWord(words[i]);
+        
+    }
+    return words.join(" ");
+}
+
+console.log(pigLatin('hello pal')); // returns 'ellohay alpy'.
 
 // =================================================================================================
 
 // ** PROBLEM 7 | 'longestWord' function
-
-let phrase = 'Foreigner is an OK band';
 
 function longestWord(string) {
 
@@ -108,8 +149,9 @@ function longestWord(string) {
 
 }
 
-let answer7 = longestWord(phrase);
-console.log(answer7)
+console.log(longestWord('Foreigner is an OK band')); // Returns 'Foreigner'.
+
+// DONE.
 
 // =============================================================================================
 
