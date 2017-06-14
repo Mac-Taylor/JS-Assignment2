@@ -1,66 +1,34 @@
 
 // ** PROBLEM 1 | 'sum' function
 
-let number1 = 5;
-let number2 = 12;
-let sum1 = 0;
+function sumFunction(value1, value2) {
 
-
-function sum(value1, value2) {
-
-    sum1 = number1 + number2;
+    sum1 = value1 + value2;
 
     return sum1;
 }
 
-let answer1 = sum(number1, number2);
-console.log(answer1) 
-
-/* IN THE 'sum' FUNCTION ABOVE THE PARAMETERS ARE DEFINED BY CHANGING THE NUMERIC VALUE 
-IN THE DEFINITIONOF THE VARIABLE. EXAMPLE ABOVE PRINTS '17'.*/
-
-let number1 = 0;
-let number2 = 0;
-let sum1 = 0;
-
-
-function sum(number1, number2) {
-
-    sum1 = number1 + number2;
-
-    return sum1;
-}
-
-let answer1 = sum(5, 6);
-console.log(answer1) 
-
-/* IN THIS VERSION OF THE 'sum' FUNCTION, THE PARAMERS ARE DEFINED 
-BY THE NUMERIC VALUES OF THE FUNCTION'S INPUTS. I WASN'T SURE WHICH 
-WOULD BE MORE GENERAL OR USEFUL, SO PUT BOTH. PARAMETERS (5, 6) 
-PRINTS '11'.*/
+console.log(sumFunction(2, 3)); // returns 5, this one is done.
+console.log(sumFunction(2, 11)); // returns 13
 
 // =================================================================================================
 
-// ** PROBLEM 2 | 'avg' function
+// 02 | avg
 
-let no1 = 0;
-let no2 = 0;
-let no3 = 0; 
-let average = 0;
+// Write a function named avg that takes 3 parameters and returns the average of those 3 numbers.
 
-function avg(no1, no2, no3) {
-    average = (no1 + no2 + no3) / 3;
+// avg(1, 5, 9); // returns 5
+// avg(4, 4, 4); // returns 4
+// avg(10, 4, 1); // returns 5
 
+function avg(x, y, z) {
+    let nmbrs = [x, y, z];
+    let average = (x + y + z) / nmbrs.length;
     return average;
 }
 
-let answer2 = avg(17, 55, 660);
-console.log(answer2);
-
-/* PARAMETERS IN THIS SOLUTION ARE DEFINED BY THE NUMERIC VALUES OF INPUTS 
-OF THE FUNCTION, NOT BY THE VARIABLES AT THE TOP. FELT LIKE THAT WAS MORE GENERAL.
-PARAMETERS (17, 55, 660) AS SHOWN PRINTS '244'. */
-
+console.log(avg(1, 4, 10)); // returns 5
+console.log(avg(1, 4, 10, 2, 8)); // also returns 5
 
 // =================================================================================================
 
